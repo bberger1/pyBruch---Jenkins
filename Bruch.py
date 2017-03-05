@@ -21,7 +21,7 @@ class Bruch(object):
         """
 
         if isinstance(zaehler, Bruch):
-            self.zaehler, self.nenner=zaehler
+            self.zaehler, self.nenner = zaehler
             return
         elif type(zaehler) is not int:
             raise TypeError('__init__: invalid variable type: '+type(zaehler))
@@ -31,11 +31,11 @@ class Bruch(object):
         if zaehler < 0 and nenner < 0:
             nenner = abs(nenner)
             zaehler = abs(zaehler)
-        elif nenner==0:
+        elif nenner == 0:
             raise ZeroDivisionError
 
-        self.zaehler=zaehler
-        self.nenner=nenner
+        self.zaehler = zaehler
+        self.nenner = nenner
 
     def __float__(self):
         """
@@ -272,7 +272,7 @@ class Bruch(object):
         :param other: value to multiply with
         :return: Bruch with other multiplied by self
         """
-        return Bruch(other)*self
+        return Bruch(other) * self
 
     def __imul__(self, other):
         """
