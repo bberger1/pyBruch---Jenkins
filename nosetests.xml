@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="64" errors="8" failures="11" skip="0"><testcase classname="Testall.TestAddition" name="testaddError" time="0.001"></testcase><testcase classname="Testall.TestAddition" name="testiAdd" time="0.000"></testcase><testcase classname="Testall.TestAddition" name="testiAdd2" time="0.000"></testcase><testcase classname="Testall.TestAddition" name="testiAddError" time="0.000"></testcase><testcase classname="Testall.TestAddition" name="testplus" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 154, in testplus
+    assert(float(self.b) == 2.3)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestAddition" name="testplus2" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 158, in testplus2
+    assert(float(self.b) == 3.5)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestAddition" name="testplus3" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 162, in testplus3
+    assert(float(self.b2) == 4.5)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestAddition" name="testradd" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 166, in testradd
+    assert(float(self.b2) == 4.5)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestAllgemein" name="testAbs" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testComplex" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 32, in testComplex
+    assert(complex(b) == 0.75)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestAllgemein" name="testFloat" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 24, in testFloat
+    assert(float(b) == 0.75)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestAllgemein" name="testInt" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testInteger" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testInvert" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testNeg" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testPow" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testPowError1" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testPowError2" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testRef" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testRef2" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="test_makeBruchInt" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="test_makeBruchTypeError" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testcreateBruchWrongTypeNenner" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testcreateBruchWrongTypeZaehler" time="0.000"></testcase><testcase classname="Testall.TestAllgemein" name="testcreateBruchZeroError" time="0.000"></testcase><testcase classname="Testall.TestDivision" name="testdiv" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /: 'Bruch' and 'Bruch'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 286, in testdiv
+    self.b = self.b / Bruch(4)
+TypeError: unsupported operand type(s) for /: 'Bruch' and 'Bruch'
+]]></error></testcase><testcase classname="Testall.TestDivision" name="testdiv2" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /: 'Bruch' and 'Bruch'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 290, in testdiv2
+    self.b = self.b / self.b3
+TypeError: unsupported operand type(s) for /: 'Bruch' and 'Bruch'
+]]></error></testcase><testcase classname="Testall.TestDivision" name="testdiv3" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /: 'Bruch' and 'int'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 294, in testdiv3
+    self.b2 = self.b / 2
+TypeError: unsupported operand type(s) for /: 'Bruch' and 'int'
+]]></error></testcase><testcase classname="Testall.TestDivision" name="testdivTypeError" time="0.000"></testcase><testcase classname="Testall.TestDivision" name="testdivZeroError" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /: 'Bruch' and 'Bruch'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 305, in testdivZeroError
+    self.assertRaises(ZeroDivisionError, self.b2.__truediv__, 0)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 475, in assertRaises
+    callableObj(*args, **kwargs)
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Bruch.py", line 204, in __truediv__
+    return self / Bruch(other)
+TypeError: unsupported operand type(s) for /: 'Bruch' and 'Bruch'
+]]></error></testcase><testcase classname="Testall.TestDivision" name="testdivZeroError2" time="0.000"></testcase><testcase classname="Testall.TestDivision" name="testiDiv" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /=: 'Bruch' and 'int'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 318, in testiDiv
+    self.b /= 2
+TypeError: unsupported operand type(s) for /=: 'Bruch' and 'int'
+]]></error></testcase><testcase classname="Testall.TestDivision" name="testiDiv2" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /=: 'Bruch' and 'Bruch'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 322, in testiDiv2
+    self.b /= Bruch(2)
+TypeError: unsupported operand type(s) for /=: 'Bruch' and 'Bruch'
+]]></error></testcase><testcase classname="Testall.TestDivision" name="testiDivError" time="0.000"></testcase><testcase classname="Testall.TestDivision" name="testrdiv" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /: 'int' and 'Bruch'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 301, in testrdiv
+    self.b2 = 2 / Bruch(2)
+TypeError: unsupported operand type(s) for /: 'int' and 'Bruch'
+]]></error></testcase><testcase classname="Testall.TestDivision" name="testrdivError" time="0.000"></testcase><testcase classname="Testall.TestDivision" name="testrdivZeroError" time="0.000"><error type="exceptions.TypeError" message="unsupported operand type(s) for /: 'Bruch' and 'Bruch'"><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 315, in testrdivZeroError
+    self.assertRaises(ZeroDivisionError, bneu.__rtruediv__, 3)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 475, in assertRaises
+    callableObj(*args, **kwargs)
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Bruch.py", line 224, in __rtruediv__
+    return Bruch(other) / self
+TypeError: unsupported operand type(s) for /: 'Bruch' and 'Bruch'
+]]></error></testcase><testcase classname="Testall.TestIteration" name="testTuple" time="0.000"></testcase><testcase classname="Testall.TestIteration" name="testTuple2" time="0.000"></testcase><testcase classname="Testall.TestIteration" name="testTuple3_Error" time="0.000"></testcase><testcase classname="Testall.TestMultiplikation" name="testiMul" time="0.000"></testcase><testcase classname="Testall.TestMultiplikation" name="testiMul2" time="0.000"></testcase><testcase classname="Testall.TestMultiplikation" name="testiMulError" time="0.000"></testcase><testcase classname="Testall.TestMultiplikation" name="testmal" time="0.000"></testcase><testcase classname="Testall.TestMultiplikation" name="testmal2" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 248, in testmal2
+    assert(float(self.b) == 2.25)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestMultiplikation" name="testmal3" time="0.000"></testcase><testcase classname="Testall.TestMultiplikation" name="testmulError" time="0.000"></testcase><testcase classname="Testall.TestMultiplikation" name="testrmal" time="0.000"></testcase><testcase classname="Testall.TestString" name="teststr" time="0.000"></testcase><testcase classname="Testall.TestString" name="teststr2" time="0.000"></testcase><testcase classname="Testall.TestSubtraktion" name="testiSub" time="0.000"></testcase><testcase classname="Testall.TestSubtraktion" name="testiSub2" time="0.000"></testcase><testcase classname="Testall.TestSubtraktion" name="testiSubError" time="0.000"></testcase><testcase classname="Testall.TestSubtraktion" name="testminus" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 197, in testminus
+    assert(float(self.b) == 0.7)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestSubtraktion" name="testminus2" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 201, in testminus2
+    assert(float(self.b) == -0.5)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestSubtraktion" name="testminus3" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 205, in testminus3
+    assert(float(self.b2) == 0.5)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestSubtraktion" name="testrsub" time="0.000"><failure type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Benedikt/Dropbox/_Schule/SEW/Jenkins/pyBruch/Testall.py", line 227, in testrsub
+    assert(float(self.b2) == 1.5)
+AssertionError
+]]></failure></testcase><testcase classname="Testall.TestSubtraktion" name="testrsubError" time="0.000"></testcase><testcase classname="Testall.TestVergleich" name="testEqual" time="0.000"></testcase><testcase classname="Testall.TestVergleich" name="testGE" time="0.000"></testcase><testcase classname="Testall.TestVergleich" name="testGT" time="0.000"></testcase><testcase classname="Testall.TestVergleich" name="testLE" time="0.000"></testcase><testcase classname="Testall.TestVergleich" name="testLT" time="0.000"></testcase><testcase classname="Testall.TestVergleich" name="testNotEqual" time="0.000"></testcase></testsuite>

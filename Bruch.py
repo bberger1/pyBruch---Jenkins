@@ -12,7 +12,7 @@ class Bruch(object):
         """
         return (self.zaehler, self.nenner).__iter__()
 
-    def __init__(self,zaehler=0,nenner=1):
+    def __init__(self, zaehler=0, nenner=1):
         """
         :raise TypeError: invalid variable types
         :raise ZeroDivisionError: if nenner equals zero
@@ -21,7 +21,7 @@ class Bruch(object):
         """
 
         if isinstance(zaehler, Bruch):
-            self.zaehler,self.nenner=zaehler
+            self.zaehler, self.nenner=zaehler
             return
         elif type(zaehler) is not int:
             raise TypeError('__init__: invalid variable type: '+type(zaehler))
@@ -67,9 +67,9 @@ class Bruch(object):
         :param other: value to multiply
         :return: Bruch with self mulitplied by other
         """
-        if(isinstance(other,Bruch)):
+        if(isinstance(other, Bruch)):
             return Bruch(self.zaehler * other.zaehler, self.nenner * other.nenner)
-        if(isinstance(other,int)):
+        if(isinstance(other, int)):
             return self * Bruch(other)
         else:
             raise TypeError('__mul__: invalid variable type: '+type(other))
@@ -162,17 +162,17 @@ class Bruch(object):
         :param other: value to add
         :return: Bruch with other added to self
         """
-        if(isinstance(other,int)):
-            return Bruch(self.zaehler+(self.nenner*other),self.nenner)
-        elif(isinstance(other,Bruch)):
+        if(isinstance(other, int)):
+            return Bruch(self.zaehler+(self.nenner*other), self.nenner)
+        elif(isinstance(other, Bruch)):
             zaehlerSelf = self.zaehler
             zaehlerOther = other.zaehler
 
-            neuerNenner = lcm(self.nenner,other.nenner)
+            neuerNenner = lcm(self.nenner, other.nenner)
             zaehlerSelf *= neuerNenner / self.nenner
             zaehlerOther *= neuerNenner / other.nenner
 
-            return Bruch(int(zaehlerSelf+zaehlerOther),neuerNenner)
+            return Bruch(int(zaehlerSelf+zaehlerOther), neuerNenner)
         else:
             raise TypeError('__add__: invalid variable type: '+type(other))
 
@@ -198,9 +198,9 @@ class Bruch(object):
         :param other: value to divide
         :return: Bruch with self divided by other
         """
-        if(isinstance(other,Bruch)):
+        if(isinstance(other, Bruch)):
             return Bruch(self.zaehler*other.nenner, self.nenner*other.zaehler)
-        elif(isinstance(other,int)):
+        elif(isinstance(other, int)):
             return self / Bruch(other)
         elif(other == 0):
             raise ZeroDivisionError
@@ -246,7 +246,7 @@ class Bruch(object):
         overrides invert operator (~)
         :return: Bruch, where nenner and zaehler are switched
         """
-        return Bruch(self.nenner,self.zaehler)
+        return Bruch(self.nenner, self.zaehler)
 
     def __lt__(self, other):
         """
